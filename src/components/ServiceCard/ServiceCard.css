@@ -1,0 +1,38 @@
+.Container {
+  perspective: 1000px;
+  display: inline-block;
+}
+.Container:hover .card {
+  transform: rotateY(180deg);
+}
+.card,
+.Front,
+.Back {
+  width: 250px;
+  height: 325px;
+  box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+}
+.card {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.Front,
+.Back {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Front {
+  z-index: 1;
+  transform: rotateY(180deg);
+  /* background: url("/examples/images/card-Front.jpg") no-repeat; */
+}
+.Back {
+  z-index: 2; /* Back side, placed above Front */
+  transform: rotateY(0deg);
+  /* background: url("/examples/images/card-Back.jpg") no-repeat; */
+}

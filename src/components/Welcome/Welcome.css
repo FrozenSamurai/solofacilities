@@ -1,0 +1,40 @@
+#cleaners {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  margin-top: auto;
+  bottom: 0;
+  z-index: -2;
+  background-image: url("../css_assets/design.svg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  /* background-size: cover; */
+  background-position: 50% 2500%;
+  background-size: 100% 95%;
+  animation: come-up 1s ease-in-out 2.7s forwards;
+}
+
+@keyframes come-up {
+  from {
+    background-position: 50% 2500%;
+  }
+  to {
+    background-position: 50% 10%;
+  }
+}
+
+#logoImage {
+  animation: come-down;
+  animation-duration: 1.8s;
+}
+
+@keyframes come-down {
+  from {
+    margin-top: -50%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
