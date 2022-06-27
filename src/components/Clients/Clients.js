@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { forwardRef } from "react";
 import Logo from "./Logo";
 
+// import "./Clients.css";
+
 const Clients = forwardRef((_, ref) => {
-  let clients = [
+  const [clients, setClients] = useState([
     "/assets/clients/honda.png",
     "/assets/clients/gst-dept.png",
     "/assets/clients/hp.png",
@@ -17,7 +19,30 @@ const Clients = forwardRef((_, ref) => {
     "/assets/clients/samsung.png",
     "/assets/clients/d-mart.png",
     "/assets/clients/sbi.png",
-  ];
+  ]);
+  const clientsDiv = useRef();
+  //scroll client div smoothly
+  useEffect(() => {
+    // const clientWidth = clientsDiv.current.clientWidth;
+    let firstElementHeight = clientsDiv.current.children[0].clientWidth;
+    firstElementHeight = clientsDiv.current.children[0].clientWidth;
+    console.log(
+      { firstElementHeight },
+      clientsDiv.current,
+      clientsDiv.current.children[0].clientWidth
+    );
+    clientsDiv.current.animate(
+      { left: -firstElementHeight },
+      { duration: 600 }
+    );
+    clientsDiv.current.onanimationend = () => {
+      const newClients = [...clients];
+      const firstEl = newClients.shift();
+      newClients.push(firstEl);
+      setClients(newClients);
+    };
+  }, []);
+
   return (
     <section ref={ref} id="clients-container" className="pt-28">
       <div className="">
@@ -30,7 +55,16 @@ const Clients = forwardRef((_, ref) => {
         >
           Clients
         </h1>
-        <div className="flex flex-wrap justify-center p-11 lg:pt-20 lg:pb-20">
+        <div
+          id="clients"
+          ref={clientsDiv}
+          className={
+            window.innerWidth < 480
+              ? "overflow-x-scroll scroll-smooth  flex-row whitespace-nowrap m-4 py-4 lg:pt-20 lg:pb-20"
+              : "flex flex-wrap justify-center m-4 py-4 lg:pt-20 lg:pb-20"
+          }
+          // style={{ scrollbar-width:" thin"}}
+        >
           {clients.map((client, index) => (
             // console.log(client);
             <Logo key={client} clientt={client} />

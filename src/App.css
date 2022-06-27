@@ -40,3 +40,29 @@
     transform: rotate(360deg);
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  background-clip: content-box;
+  height: 6px;
+  width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: theme("colors.primary");
+  border-radius: 8px;
+  height: 6px;
+  width: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.primary");
+  cursor: pointer;
+}

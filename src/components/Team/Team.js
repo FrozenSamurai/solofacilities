@@ -21,16 +21,10 @@ const Team = forwardRef((_, ref) => {
       imagePath: "/assets/team/raj.jpg",
       description: "engineer engineer engineer",
     },
-    {
-      name: "Raj Jadhav",
-      role: "Engnieer",
-      imagePath: "/assets/team/raj.jpg",
-      description: "engineer engineer engineer",
-    },
   ];
 
   return (
-    <section ref={ref} id="team_container" className="pt-28 pb-10">
+    <section ref={ref} id="team-container" className="pt-28 pb-10">
       <div className="flex flex-row justify-around">
         <div>
           <h1

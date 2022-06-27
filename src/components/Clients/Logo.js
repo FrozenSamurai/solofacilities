@@ -6,9 +6,9 @@ const Logo = ({ clientt }) => {
     (
       <div
         data-aos="zoom-out"
-        className="flex flex-col w-44 border-2 h-24 rounded-xl items-center justify-center shadow-xl m-2 hover:animate-fadeUp"
+        className=" w-44 border-2 h-24 rounded-xl  shadow-xl m-2 hover:animate-fadeUp inline-block "
       >
-        <div className="flex m-3 h-16 w-40 items-center justify-center">
+        <div className="flex m-3 h-16 w-40 items-center justify-center pr-2">
           <img src={clientt} alt="altt" className="w-fit h-full" />
         </div>
       </div>

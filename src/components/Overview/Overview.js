@@ -76,8 +76,8 @@ const Overview = forwardRef(({ location }, ref) => {
   );
 });
 
-const A = ({ children, b }) => (
-  <span className={`text-highlight ${b && "font-bold"}`}>{children}</span>
-);
+// const A = ({ children, b }) => (
+//   <span className={`text-highlight ${b && "font-bold"}`}>{children}</span>
+// );
 
 export default Overview;

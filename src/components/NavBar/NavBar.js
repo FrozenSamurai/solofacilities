@@ -110,13 +110,12 @@ function NavBar({ inView }) {
                 animationDelay: window.innerWidth < 1024 ? "500ms" : "2.4s",
               }}
               className={
-                "nav-item" +
-                (inView === "contactUs" ? " navbar-item-in-view" : "")
+                "nav-item" + (inView === "team" ? " navbar-item-in-view" : "")
               }
             >
               <Link
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:opacity-75"
-                to="team_container"
+                to="team-container"
                 smooth={true}
                 duration={700}
               >
@@ -133,7 +132,7 @@ function NavBar({ inView }) {
             >
               <Link
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:opacity-75"
-                to="faq-container"
+                to="contact-container"
                 smooth={true}
                 duration={700}
               >

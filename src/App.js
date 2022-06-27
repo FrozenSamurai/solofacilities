@@ -10,18 +10,35 @@ import Commercial from "./components/Commercial/Commercial";
 import Industrial from "./components/Industrial/Industrial";
 import Clients from "./components/Clients/Clients";
 import Team from "./components/Team/Team";
+import Contact from "./components/Contact/Contact";
 
 import React from "react";
 
 // className="bg-cleaning_image h-screen bg-cover bg-center bg-blur-sm bg-fixed"
 function App() {
   return (
-    <Routes>
-      <Route exact path="/" element={<MainApp />} />
-      <Route path="/residential" element={<Residential />} />
-      <Route path="/commercial" element={<Commercial />} />
-      <Route path="/industrial" element={<Industrial />} />
-    </Routes>
+    <>
+      <a
+        // onclick="buttonHandler()"
+        href="https://wa.me/919082296202?text=Hello%2C%20I%20found%20you%20on%20SOLO%20FACILITIES%20WEBSITE.........  "
+        target={"_blank"}
+        rel="noopener noreferrer"
+        title="Contact Us"
+        className={
+          window.innerWidth < 480
+            ? "fixed z-50 bottom-7 right-4 bg-green-600 w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-green-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
+            : "fixed z-50 bottom-10 right-8 bg-green-600 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-green-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
+        }
+      >
+        <img className="w-fit h-3/4" src="/whatsapp.png" alt="Whatsapp"></img>
+      </a>
+      <Routes>
+        <Route exact path="/" element={<MainApp />} />
+        <Route path="/residential" element={<Residential />} />
+        <Route path="/commercial" element={<Commercial />} />
+        <Route path="/industrial" element={<Industrial />} />
+      </Routes>
+    </>
   );
 }
 
@@ -37,6 +54,7 @@ const MainApp = () => {
       <Services />
       <Clients />
       <Team />
+      <Contact />
     </>
   );
 };
