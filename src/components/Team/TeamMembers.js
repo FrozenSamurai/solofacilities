@@ -4,7 +4,7 @@ const TeamMembers = ({ imagePath, name, role, description }) => {
   return (
     <div
       data-aos="flip-left"
-      className="flex items-center justify-center w-full md:w-fit h-fit rounded-full border-2 my-3 hover:border-slate-900 p-2 hover:bg-slate-100 "
+      className="flex items-center justify-center w-full md:w-fit shadow-xl from-gray-300 h-fit rounded-full border-2 my-3 hover:border-slate-900 p-2 hover:bg-slate-100 "
     >
       <div className="flex flex-col md:flex-row items-center justify-center">
         <img src={imagePath} className="rounded-full h-56 w-56" alt="member" />

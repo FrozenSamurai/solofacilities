@@ -24,7 +24,7 @@ function App() {
         href="https://wa.me/919082296202?text=Hello%2C%20I%20found%20you%20on%20SOLO%20FACILITIES%20WEBSITE.........  "
         target={"_blank"}
         rel="noopener noreferrer"
-        title="Contact Us"
+        title="WhatsApp"
         className={
           window.innerWidth < 480
             ? "fixed z-50 bottom-7 right-4 bg-green-600 w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-green-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"

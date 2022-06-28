@@ -13,7 +13,7 @@ const ServiceCard = ({ imagePath, text, service }) => {
       <div className="card mx-auto">
         <div
           className="Back rounded-lg shadow-2xl px-3 py-4 text-gray-50 text-center"
-          style={{ backgroundColor: "rgb(236 ,81 ,85)" }}
+          style={{ backgroundColor: "rgb(22, 163, 74)" }}
         >
           <img
             src={imagePath}
