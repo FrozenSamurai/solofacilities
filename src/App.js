@@ -11,6 +11,7 @@ import Industrial from "./components/Industrial/Industrial";
 import Clients from "./components/Clients/Clients";
 import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 import React from "react";
 
@@ -55,6 +56,7 @@ const MainApp = () => {
       <Clients />
       <Team />
       <Contact />
+      <Footer />
     </>
   );
 };
