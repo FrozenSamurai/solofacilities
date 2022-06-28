@@ -5,20 +5,21 @@ export const SERVICES = [
   { name: "Cleaning Services,link : /services" },
 ];
 export const CONTACT = [
-  { name: 'Contact Us,link : "#"' },
-  { name: 'About Us  ,link : "#"' },
-  { name: 'Team ,link : "#"' },
-  { name: 'Clients ,link : "#"' },
+  { name: 'Contact Us',link : "#" },
+  { name: 'About Us ' ,link : "#" },
+  { name: 'Team' ,link : "#" },
+  { name: 'Clients' ,link : "#" },
 ];
 export const TEAM = [
-  { name: 'Team,link : "#"' },
-  { name: 'Team,link : "#"' },
-  { name: 'Team,link : "#"' },
-  { name: 'Team,link : "#"' },
+  { name: 'Team',link : "#" },
+  { name: 'Team',link : "#" },
+  { name: 'Team',link : "#" },
+  {name: 'Team',link : "#" },
 ];
 export const CLIENTS = [
-  { name: 'Clients,link : "#"' },
-  { name: 'Clients,link : "#"' },
-  { name: 'Clients,link : "#"' },
-  { name: 'Clients,link : "#"' },
+  { name: 'Clients',link : "#"},
+  { name: 'Clients',link : "#" },
+  { name: 'Clients',link : "#" },
+  { name: 'Clients',link : "#" },
 ];
+
