@@ -1,8 +1,12 @@
 import React from "react";
 import { forwardRef } from "react";
 import { GoLocation } from "react-icons/go";
+import { AiFillInstagram } from "react-icons/ai";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 
 const Contact = forwardRef((_, ref) => {
+  let iconStyles = { color: "white", fontSize: "1.5em" };
   return (
     <section ref={ref} id="contact-container" className="pt-28 pb-10">
       <div className="flex flex-row justify-around">
@@ -11,13 +15,13 @@ const Contact = forwardRef((_, ref) => {
             data-aos="fade-down"
             className="
         text-black text-5xl text-center
-        lg:text-6xl uppercase glow font-titleBold
+        lg:text-5xl uppercase glow font-titleBold
         "
           >
             CONTACT US
           </h1>
           <br />
-          
+
           <div
             className={
               window.innerWidth < 490
@@ -25,7 +29,7 @@ const Contact = forwardRef((_, ref) => {
                 : "grid grid-cols-2 divide-x-4"
             }
           >
-            <div className="text-center text-3xl px-4">
+            <div className="text-center text-3xl px-4 mt-4">
               Mumbai
               <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
               <div className="w-auto shadow-xl flex-col p-4 my-4 rounded-lg">
@@ -61,7 +65,7 @@ const Contact = forwardRef((_, ref) => {
                 </div>
               </div>
             </div>
-            <div className=" text-3xl text-center">
+            <div className=" text-3xl text-center mt-4">
               Pune
               <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
               <div className="w-auto shadow-xl flex-col p-4 my-4 mx-4 rounded-lg">
@@ -93,24 +97,23 @@ const Contact = forwardRef((_, ref) => {
                 >
                   <p className="text-lg  items-center text-center flex flex-col">
                     <GoLocation size={25} /> Mohan Regency, adharwadi,kalyan(w)
-                    </p>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* <div className="flex flex-col mt-9">
-            <p className="text-black text-center font-bold text-xl">
-              Mumbai, Thane, Navi-mumbai
-            </p>
-            <p className="text-black text-center text-xl" onClick={() => {}}>
-              <span>&#128222; : </span>+91-9888888888
-            </p>
-            <p className="text-black text-center text-xl">
-              <span>&#9993; : </span>rajjdhv2001@gmail.com
-            </p>
-            <p>ADDRESS : </p>
-          </div> */}
+          {/* SocialMedia */}
+          <div className="flex flex-row items-center justify-center  py-2">
+            <span className="p-2 mt-4 cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#ff0000] duration-300">
+              <AiFillInstagram size={30} style={iconStyles} />
+            </span>
+            <span className="p-2 mt-4  cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#ff0000] duration-300">
+              <AiOutlineTwitter size={30} style={iconStyles} />
+            </span>
+            <span className="p-2 mt-4  cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#ff0000] duration-300">
+              <BsFacebook size={30} style={iconStyles} />
+            </span>
+          </div>
         </div>
       </div>
     </section>
