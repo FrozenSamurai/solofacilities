@@ -6,10 +6,8 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 
 const Contact = forwardRef((_, ref) => {
-
   let iconStyles = { color: "white", fontSize: "1.5em" };
   return (
-    
     <section ref={ref} id="contact-container" className="pt-28 pb-10">
       <div className="flex flex-row justify-around">
         <div>
@@ -17,7 +15,7 @@ const Contact = forwardRef((_, ref) => {
             data-aos="fade-down"
             className="
         text-black text-5xl text-center
-        lg:text-6xl uppercase glow font-titleBold
+        lg:text-5xl uppercase glow font-titleBold
         "
           >
             CONTACT US
@@ -31,7 +29,7 @@ const Contact = forwardRef((_, ref) => {
                 : "grid grid-cols-2 divide-x-4"
             }
           >
-            <div className="text-center text-3xl px-4">
+            <div className="text-center text-3xl px-4 mt-4">
               Mumbai
               <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
               <div className="w-auto shadow-xl flex-col p-4 my-4 rounded-lg">
@@ -67,7 +65,7 @@ const Contact = forwardRef((_, ref) => {
                 </div>
               </div>
             </div>
-            <div className=" text-3xl text-center">
+            <div className=" text-3xl text-center mt-4">
               Pune
               <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
               <div className="w-auto shadow-xl flex-col p-4 my-4 mx-4 rounded-lg">
@@ -106,13 +104,13 @@ const Contact = forwardRef((_, ref) => {
           </div>
           {/* SocialMedia */}
           <div className="flex flex-row items-center justify-center  py-2">
-            <span className="p-3  cursor-pointer inline-flex items-center rounded-full bg-[#ec2F4B] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#9450f2] duration-300">
-              <AiFillInstagram size={30} style={iconStyles}/>
+            <span className="p-2 mt-4 cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#ff0000] duration-300">
+              <AiFillInstagram size={30} style={iconStyles} />
             </span>
-            <span className="p-3  cursor-pointer inline-flex items-center rounded-full bg-[#ec2F4B] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#9450f2] duration-300">
-              <AiOutlineTwitter size={30} style={iconStyles}/>
+            <span className="p-2 mt-4  cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#ff0000] duration-300">
+              <AiOutlineTwitter size={30} style={iconStyles} />
             </span>
-            <span className="p-3  cursor-pointer inline-flex items-center rounded-full bg-[#ec2F4B] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#9450f2] duration-300">
+            <span className="p-2 mt-4  cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#ff0000] duration-300">
               <BsFacebook size={30} style={iconStyles} />
             </span>
           </div>
