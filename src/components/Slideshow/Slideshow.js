@@ -6,16 +6,24 @@ import "react-slideshow-image/dist/styles.css";
 
 const slideImages = [
   {
-    url: "/logo512.png",
+    url: "/assets/slides/1.jpeg",
     caption: "Slide 1",
   },
   {
-    url: "/cleaning_image.png",
+    url: "/assets/slides/2.jpeg",
     caption: "Slide 2",
   },
   {
-    url: "images/slide_4.jpg",
+    url: "/assets/slides/3.jpeg",
     caption: "Slide 3",
+  },
+  {
+    url: "/assets/slides/4.jpeg",
+    caption: "Slide 4",
+  },
+  {
+    url: "/assets/slides/5.jpeg",
+    caption: "Slide 5",
   },
 ];
 
@@ -29,6 +37,7 @@ const Slideshow = () => {
             key={index}
           >
             <img src={slideImage.url} alt={slideImage.caption} />
+
             <br />
             <h1>{slideImage.caption}</h1>
           </div>
