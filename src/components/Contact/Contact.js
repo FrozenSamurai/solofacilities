@@ -11,16 +11,16 @@ const Contact = forwardRef((_, ref) => {
   let iconStyles = { color: "white", fontSize: "1.5em" };
   return (
     <section ref={ref} id="contact-container" className="pt-28 pb-10">
-      <div className="flex flex-row justify-around">
+      <div className=" flex flex-row justify-around">
         <div>
           <h1
             data-aos="fade-down"
             className="
-        text-black text-5xl text-center
-        lg:text-5xl uppercase glow font-titleBold
+        text-white text-5xl text-center
+        lg:text-5xl capitalize glow font-titleBold 
         "
           >
-            CONTACT US
+            One call cleans it all
           </h1>
           <br />
 
@@ -31,13 +31,15 @@ const Contact = forwardRef((_, ref) => {
                 : "grid grid-cols-2 divide-x-4"
             }
           >
-            <div className="text-center text-3xl px-4 mt-4">
-              Mumbai
-              <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
-              <div className="w-auto shadow-xl flex-col p-4 my-4 rounded-lg">
+            <div className=" text-center text-3xl px-4 mt-4">
+              <div className=" w-full border-2 rounded-md bg-opacity-70 bg-white">
+                Mumbai
+                <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
+              </div>
+              <div className="w-auto shadow-2xl border-4 bg-opacity-70 bg-white flex-col p-4 my-4 rounded-lg">
                 <div
                   data-aos="fade-right"
-                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg"
+                  className="w-full shadow-xl flex-col p-4 my-4  rounded-lg bg-white"
                 >
                   <p
                     className="text-black text-center text-xl"
@@ -48,7 +50,7 @@ const Contact = forwardRef((_, ref) => {
                 </div>
                 <div
                   data-aos="fade-right"
-                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg"
+                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
                   <a
                     className="text-black text-center text-xl"
@@ -59,7 +61,7 @@ const Contact = forwardRef((_, ref) => {
                 </div>
                 <div
                   data-aos="fade-right"
-                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg"
+                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
                   <a
                     className="text-lg  items-center text-center flex flex-col"
@@ -75,12 +77,14 @@ const Contact = forwardRef((_, ref) => {
               </div>
             </div>
             <div className=" text-3xl text-center mt-4">
-              Pune
-              <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
-              <div className="w-auto shadow-xl flex-col p-4 my-4 mx-4 rounded-lg">
+              <div className="w-full mr-4 border-2 rounded-md bg-opacity-70 bg-white">
+                Pune
+                <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
+              </div>
+              <div className="bg-opacity-70 bg-white w-auto shadow-xl flex-col p-4 my-4 mx-4 rounded-lg">
                 <div
                   data-aos="fade-left"
-                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg"
+                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
                   <p
                     className="text-black text-center text-xl "
@@ -91,7 +95,7 @@ const Contact = forwardRef((_, ref) => {
                 </div>
                 <div
                   data-aos="fade-left"
-                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg"
+                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
                   <p
                     className="text-black text-center text-xl"
@@ -102,7 +106,7 @@ const Contact = forwardRef((_, ref) => {
                 </div>
                 <div
                   data-aos="fade-left"
-                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg"
+                  className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
                   <p className="text-lg  items-center text-center flex flex-col">
                     <GoLocation size={25} /> Mohan Regency, adharwadi,kalyan(w)
@@ -112,9 +116,9 @@ const Contact = forwardRef((_, ref) => {
             </div>
           </div>
           {/* SocialMedia */}
-          <div className="flex flex-row items-center justify-center  py-2">
+          <div className=" flex flex-row items-center justify-center  py-2">
             <a
-              href="https://www.instagram.com/solofacilities/"
+              href="https://instagram.com/solofacilities.official?igshid=YmMyMTA2M2Y="
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 mt-4 cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#fb3958] duration-300"

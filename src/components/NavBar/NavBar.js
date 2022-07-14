@@ -4,9 +4,11 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 
 import "./NavBar.css";
+import { useNavigate } from "react-router-dom";
 
 function NavBar({ inView }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav

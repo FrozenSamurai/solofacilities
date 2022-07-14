@@ -1,15 +1,16 @@
 import React, { forwardRef } from "react";
-// import Mascot from "../Mascot/Mascot";
+import Mascot from "../Mascot/Mascot";
 import "./Overview.css";
 import Slideshow from "../Slideshow/Slideshow";
+// import Mascot from "../Mascot/Mascot";
 
 const Overview = forwardRef(({ location }, ref) => {
   return (
     <section ref={ref} id="overview-container" className="flex  items-start">
-      <div className="px-4 pt-0 w-full sm:px-6 md:px-12 lg:pt-24">
-        <div className="flex lg:justify-start flex-col lg:flex-row items-center w-full">
+      <div className="px-4 pt-0 w-full sm:px-6 md:px-12 lg:pt-0">
+        <div className="flex lg:justify-center flex-col lg:flex-row items-center w-full">
           <h1
-            className={`glow mb-3 block lg:hidden text-black mx-auto
+            className={`glow mb-3 block lg:hidden text-white underline mx-auto
                 lg:mx-0 text-4xl lg:text-5xl 
               `}
             style={{
@@ -21,14 +22,16 @@ const Overview = forwardRef(({ location }, ref) => {
             OVERVIEW
           </h1>
           <div
-            className="flex flex-col items-start justify-start h-full "
+            data-aos="fade-right"
+            className="flex flex-col items-start justify-start h-full mt-36"
             style={{
               // height: window.innerWidth < 480 ? 320 : 100,
-              maxWidth: 400,
+              width: 600,
+              height: 600,
             }}
           >
-            {/* <Mascot location={location} /> */}
-            <Slideshow />
+            <Mascot location={location} />
+            {/* <Slideshow /> */}
           </div>
           <div className="flex flex-col justify-center items-center">
             <div
@@ -40,7 +43,7 @@ const Overview = forwardRef(({ location }, ref) => {
             lg:mb-16 ml-0 lg:ml-4"
             >
               <h1
-                className={` hidden mb-8 lg:block text-black mx-auto text-center lg:text-center
+                className={` hidden mb-8 lg:block text-white underline mx-auto text-center lg:text-center
                 lg:mx-0 text-4xl lg:text-5xl 
               `}
                 style={{
@@ -59,13 +62,16 @@ const Overview = forwardRef(({ location }, ref) => {
                 workforces for long and short terms depending on the necessity.
                 <br />
                 <br />
-                We necessitate our working policy with quality services,
-                professional staff, and a strong team built with proper training
-                sessions. Before sending a team for a specific service, we take
-                some time for their training and appropriate grounding and
-                tutoring over professional behaviours and codes of conduct to
-                keep in view.
+                <A>
+                  We necessitate our working policy with quality services,
+                  professional staff, and a strong team built with proper
+                  training sessions. Before sending a team for a specific
+                  service, we take some time for their training and appropriate
+                  grounding and tutoring over professional behaviours and codes
+                  of conduct to keep in view.
+                </A>
               </p>
+
               {/* <p className="mb-3 lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-gray-300">
               GameUp will empower already established games to come on
               blockchain directly through our API and rewards system.
@@ -76,7 +82,7 @@ const Overview = forwardRef(({ location }, ref) => {
               target={"_blank"}
               rel="noopener noreferrer"
               data-aos="zoom-in"
-              className="text-blue-500 hover:text-blue-800 border-4 rounded-md py-2 px-4 border-blue-500 hover:border-blue-700 hover:bg-gray-100 mt-4 md:mt-0"
+              className="text-blue-500 hover:text-blue-800 border-4 rounded-md py-2 px-4 border-blue-500 hover:border-blue-700 hover:bg-gray-100 bg-opacity-70 mt-4 md:mt-0 bg-white"
             >
               View/Download Company Profile here
             </a>
@@ -87,8 +93,8 @@ const Overview = forwardRef(({ location }, ref) => {
   );
 });
 
-// const A = ({ children, b }) => (
-//   <span className={`text-highlight ${b && "font-bold"}`}>{children}</span>
-// );
+const A = ({ children, b }) => (
+  <span className={`text-highlight ${b && "font-bold"}`}>{children}</span>
+);
 
 export default Overview;

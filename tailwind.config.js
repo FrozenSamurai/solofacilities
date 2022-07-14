@@ -35,7 +35,7 @@ module.exports = {
         },
       }),
       backgroundImage: {
-        cleaning_image: "url('./components/css_assets/cleaning_image.png')",
+        cleaning_image: "url('../public/assets/clients/BACKGROUND1.jpg')",
       },
     },
   },

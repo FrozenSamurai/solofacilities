@@ -18,7 +18,7 @@ import React from "react";
 // className="bg-cleaning_image h-screen bg-cover bg-center bg-blur-sm bg-fixed"
 function App() {
   return (
-    <>
+    <div className="bg-cleaning_image bg-cover bg-center bg-no-repeat bg-fixed ">
       <a
         // onclick="buttonHandler()"
         href="https://wa.me/919082296202?text=Hello%2C%20I%20found%20you%20on%20SOLO%20FACILITIES%20WEBSITE.........  "
@@ -33,22 +33,22 @@ function App() {
       >
         <img className="w-fit h-3/4" src="/whatsapp.png" alt="Whatsapp"></img>
       </a>
+      <Splash />
       <Routes>
         <Route exact path="/" element={<MainApp />} />
         <Route path="/residential" element={<Residential />} />
         <Route path="/commercial" element={<Commercial />} />
         <Route path="/industrial" element={<Industrial />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
 const MainApp = () => {
   return (
     <>
-      <Splash />
       <NavBar />
-      <div className="h-screen">
+      <div className="h-screen bg-white">
         <Welcome />
       </div>
       <Overview />

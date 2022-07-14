@@ -49,7 +49,7 @@ const Clients = forwardRef((_, ref) => {
         <h1
           data-aos="fade-down"
           className="
-        text-black text-center text-5xl
+        text-white underline text-center text-5xl
         lg:text-6xl uppercase glow font-titleBold
         "
         >

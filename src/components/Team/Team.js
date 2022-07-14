@@ -30,7 +30,7 @@ const Team = forwardRef((_, ref) => {
           <h1
             data-aos="fade-down"
             className="
-            text-black text-5xl text-center
+            text-white text-5xl text-center
             lg:text-6xl uppercase glow font-titleBold
             "
           >

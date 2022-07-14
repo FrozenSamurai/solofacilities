@@ -26,10 +26,10 @@ const Welcome = forwardRef((_, ref) => {
                   id="logoImage"
                   className="mb-4 "
                 />
-                <h1 className="text-center text-black text-4xl font-sora font-semibold">
+                <h1 className="text-center text-black text-4xl font-sora font-semibold z-10">
                   Welcome to Solo Facilities
                 </h1>
-                <p className="text-center text-black text-xl font-sora font-semibold">
+                <p className="text-center text-black text-xl font-sora font-semibold z-10">
                   We are a small, family owned business that specializes in
                   providing the best cleaning services in the area.
                 </p>
@@ -38,7 +38,7 @@ const Welcome = forwardRef((_, ref) => {
           </div>
         </div>
       </div>
-      <div id="cleaners" className="bottom-0 h-10" style={{ zIndex: -1 }}></div>
+      <div id="cleaners" className="bottom-0 h-10" style={{ zIndex: 0 }}></div>
     </section>
   );
 });
