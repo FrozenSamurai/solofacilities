@@ -14,6 +14,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 import React from "react";
+import OurNumbers from "./components/OurNumbers/OurNumbers";
 
 // className="bg-cleaning_image h-screen bg-cover bg-center bg-blur-sm bg-fixed"
 function App() {
@@ -54,6 +55,7 @@ const MainApp = () => {
       <Overview />
       <Services />
       <Clients />
+      <OurNumbers />
       <Team />
       <Contact />
       <Footer />

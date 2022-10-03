@@ -80,13 +80,13 @@ const Footer = () => {
             Dombivli East, Maharashtra 421201
           </a>
           <hr class="border-gray-100 md:my-2 md:px-32 px-16"></hr>
-          <p
+          <a
             className="flex flex-row items-center justify-center text-center"
-            href="tel:9082296202"
+            href="tel:+919082296202"
           >
             <span className="text-gray-600">&#128222; :</span>
             +91-9082296202/+91-9892447318
-          </p>
+          </a>
         </div>
         <div className="p-3 w-full">
           <a

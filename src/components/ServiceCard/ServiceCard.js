@@ -24,10 +24,13 @@ const ServiceCard = ({ imagePath, text, service }) => {
           <p className="text-gray-200 pt-4 text-3xl">{service}</p>
         </div>
         <div
-          className="Front flex items-center justify-center text-center rounded-lg shadow-2xl px-5 py-6 text-gray-50"
+          className="Front flex flex-col items-center  text-center rounded-lg shadow-2xl px-2 pt-2 text-gray-50"
           style={{ backgroundColor: "rgb(29, 56, 107)" }}
         >
-          {text}
+          <pre className="text-left pb-2">{text}</pre>
+          <a className="w-16 bg-green-500 rounded-sm" href="tel:+91-8446189054">
+            Call Us
+          </a>
         </div>
       </div>
     </div>

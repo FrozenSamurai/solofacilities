@@ -10,7 +10,17 @@ const Residential = () => {
   const residentService = [
     {
       imagePath: "/assets/deep_cleaning.png",
-      text: "",
+      text: `-Kitchen Deep Cleaning
+-Bathroom Deep Cleaning
+-Livingroom & Bedroom Deep 
+  Cleaning
+-Floor Cleaning
+-Hard to reach spots 
+     Cleaning
+
+Available in Two Packages
+-Furnished Homes
+-Unfurnished Homes`,
       service: "Home Deep Cleaning Service",
     },
     {

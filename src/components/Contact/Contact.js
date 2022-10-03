@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Contact = forwardRef((_, ref) => {
   let iconStyles = { color: "white", fontSize: "1.5em" };
   return (
-    <section ref={ref} id="contact-container" className="pt-28 pb-10">
+    <section ref={ref} id="contact-container" className="pt-28 lg:pb-10">
       <div className=" flex flex-row justify-around">
         <div>
           <h1
@@ -27,7 +27,7 @@ const Contact = forwardRef((_, ref) => {
           <div
             className={
               window.innerWidth < 490
-                ? "grid grid-rows-2 divide-y-4"
+                ? "grid divide-y-4"
                 : "grid grid-cols-2 divide-x-4"
             }
           >
@@ -41,12 +41,12 @@ const Contact = forwardRef((_, ref) => {
                   data-aos="fade-right"
                   className="w-full shadow-xl flex-col p-4 my-4  rounded-lg bg-white"
                 >
-                  <p
+                  <a
                     className="text-black text-center text-xl"
-                    onClick={() => {}}
+                    href="tel:+919082296202"
                   >
-                    <span>&#128222; : </span>+91-9082296202
-                  </p>
+                    <span>&#128222; : </span>+91-9082296202 /+91-9892447318
+                  </a>
                 </div>
                 <div
                   data-aos="fade-right"
@@ -76,8 +76,8 @@ const Contact = forwardRef((_, ref) => {
                 </div>
               </div>
             </div>
-            <div className=" text-3xl text-center mt-4">
-              <div className="w-full mr-4 border-2 rounded-md bg-opacity-70 bg-white">
+            <div className=" text-3xl text-center mt-4 pt-8 md:pt-0">
+              <div className=" mx-4 border-2 rounded-md bg-opacity-70 bg-white">
                 Pune
                 <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
               </div>
@@ -86,30 +86,32 @@ const Contact = forwardRef((_, ref) => {
                   data-aos="fade-left"
                   className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
-                  <p
+                  <a
                     className="text-black text-center text-xl "
-                    onClick={() => {}}
+                    href="tel:+91-8446189054"
                   >
-                    <span>&#128222; : </span>+91-9888888888
-                  </p>
+                    <span>&#128222; : </span>+91-8446189054 /+91-9764490430
+                  </a>
                 </div>
                 <div
                   data-aos="fade-left"
                   className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
-                  <p
+                  <a
                     className="text-black text-center text-xl"
-                    onClick={() => {}}
+                    href="mailto:info@solofacilities.com"
                   >
-                    <span>&#9993; : </span>rajjdhv2001@gmail.com
-                  </p>
+                    <span>&#9993; : </span>info@solofacilities.com
+                  </a>
                 </div>
                 <div
                   data-aos="fade-left"
                   className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
                   <p className="text-lg  items-center text-center flex flex-col">
-                    <GoLocation size={25} /> Mohan Regency, adharwadi,kalyan(w)
+                    <GoLocation size={25} />
+                    Santkrupa,Sarve no.7,Lane no.3,saidattnagar,taljai
+                    pathar,Dhankwadi Near Gajraj Loundry
                   </p>
                 </div>
               </div>
@@ -157,7 +159,7 @@ const Contact = forwardRef((_, ref) => {
               href="https://www.linkedin.com/in/solo-facilities-3731a321a/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 mt-4  cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#0072b1] duration-300"
+              className="flex-col shadow-lg  p-2 mt-4  cursor-pointer inline-flex items-center rounded-full bg-[#000000] mx-1.5 text-xl hover:text-gray-100 hover:bg-[#0072b1] duration-300"
               title="Linkedin"
             >
               <FaLinkedin size={30} style={iconStyles} />

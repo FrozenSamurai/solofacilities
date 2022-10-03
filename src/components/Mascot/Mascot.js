@@ -25,7 +25,7 @@ function Scene({ canvasRef, setText, setCanvasHovered, location, ...props }) {
     let rect = canvas.getBoundingClientRect();
     setCanvasCenter({
       x: rect.left + rect.width / 2,
-      y: rect.top + rect.height / 2,
+      y: rect.top + rect.height / -2,
     });
     if (location === "/" && canvasRef.current !== null) {
       document.onscroll = function () {
@@ -57,7 +57,7 @@ function Scene({ canvasRef, setText, setCanvasHovered, location, ...props }) {
       onClick={() => setText("Welcome to SOLO FACILITIES!")}
     >
       <group name="Scene">
-        <group name="Armature" position={[0.01, 0.2, 0.79]}>
+        <group name="Armature" position={[0.01, 0.2, 0.9]}>
           <primitive object={nodes.Bone001} />
           <primitive object={nodes.neutral_bone} />
           <skinnedMesh
@@ -67,7 +67,7 @@ function Scene({ canvasRef, setText, setCanvasHovered, location, ...props }) {
             skeleton={nodes.pCylinder6.skeleton}
           />
         </group>
-        <group name="Empty" position={[0.01, 0.06, 1.16]} />
+        <group name="Empty" position={[1, 1, 5]} />
       </group>
     </group>
   );

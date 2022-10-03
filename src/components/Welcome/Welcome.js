@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../css_assets/solo_facilities.png";
+
 import "./Welcome.css";
 import { forwardRef } from "react";
 // import design from "../css_assets/design.png";
@@ -8,7 +9,7 @@ const Welcome = forwardRef((_, ref) => {
   return (
     <section ref={ref} id="landing-container" className="">
       <div>
-        <div className="container mx-auto pt-28 px-4">
+        <div className="container mx-auto pt-24 px-4">
           <div className="flex flex-wrap justify-center">
             <div className="w-full lg:w-1/2 px-4">
               <div
@@ -20,11 +21,18 @@ const Welcome = forwardRef((_, ref) => {
                 className="flex flex-col items-center"
               >
                 <img
+                  src="/samartha.png"
+                  alt="jay jay Raghuveer Samarth"
+                  style={{ width: 100 }}
+                  id="Samartha"
+                  className=""
+                />
+                <img
                   src={logo}
                   alt="logo"
                   style={{ width: 530 }}
                   id="logoImage"
-                  className="mb-4 "
+                  className=" "
                 />
                 <h1 className="text-center text-black text-4xl font-sora font-semibold z-10">
                   Welcome to Solo Facilities
