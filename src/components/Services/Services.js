@@ -60,7 +60,7 @@ const Services = forwardRef((_, ref) => {
         data-aos="fade-down"
         className="
         text-white underline text-center text-5xl
-        lg:text-6xl uppercase glow font-titleBold
+        lg:text-6xl uppercase glow font-semibold
         "
       >
         services

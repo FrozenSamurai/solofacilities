@@ -17,7 +17,7 @@ const Contact = forwardRef((_, ref) => {
             data-aos="fade-down"
             className="
         text-white text-5xl text-center
-        lg:text-5xl capitalize glow font-titleBold 
+        lg:text-5xl capitalize glow font-semibold
         "
           >
             One call cleans it all

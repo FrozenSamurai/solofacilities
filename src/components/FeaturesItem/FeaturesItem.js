@@ -7,7 +7,7 @@ function FeaturesItem({ imagePath, text, navigator }) {
   return (
     <div
       data-aos="flip-left"
-      className="items-center features-item rounded-lg shadow-2xl flex flex-col justify-center text-center px-3 py-6 bg-slate-200 hover:bg-white"
+      className="items-center features-item rounded-lg shadow-2xl flex flex-col justify-center text-center px-3 py-6 bg-slate-200 hover:bg-white cursor-pointer"
       style={{
         width: 300,
         outline: "1px solid #273b71",

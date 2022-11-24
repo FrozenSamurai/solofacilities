@@ -10,7 +10,7 @@ const Residential = () => {
   const residentService = [
     {
       imagePath: "/assets/deep_cleaning.png",
-      text: `-Kitchen Deep Cleaning
+      text: `Kitchen Deep Cleaning
 -Bathroom Deep Cleaning
 -Livingroom & Bedroom Deep 
   Cleaning
@@ -25,51 +25,46 @@ Available in Two Packages
     },
     {
       imagePath: "/assets/kitchen_cleaning.png",
-      text: "",
+      text: "Deep cleaning of kitchen slabs, walls, tiles, floor, sink -Thorough cleaning of Windows, Fridge and Microwave exteriors.",
       service: "Kitchen Cleaning Service",
     },
     {
       imagePath: "/assets/bathroom_cleaning.png",
-      text: "",
+      text: "Dirt and black stains remove for from topilet pot, tiles, floor, basin, etc. -Book the service every month for a clean spotless and hygienic restrooms",
       service: "Bathroom Cleaning Service",
     },
     {
       imagePath: "/assets/sofa_cleaning.png",
-      text: "",
+      text: "Dry vacuuming to remove crumbs and dirt particles. -Wet shampooing and vacuuming to remove tough stains and spillages.",
       service: "Sofa Cleaning Service",
     },
     {
       imagePath: "/assets/chair_cleaning.png",
-      text: "",
+      text: "Dry vacuuming to remove crumbs and dirt particles. -Wet shampooing and vacuuming to remove tough stains and spillages.",
       service: "Chair Cleaning Service",
     },
     {
       imagePath: "/assets/carpet_cleaning.png",
-      text: "",
+      text: "Dry vacuuming to remove crumbs and dirt particles. -Wet shampooing and vacuuming to remove tough stains and spillages.",
       service: "Carpet Cleaning Service",
     },
     {
       imagePath: "/assets/matress_cleaning.png",
-      text: "",
+      text: "Deep cleaning of one Single/Double bed mattress on both sides. -Dry vacuuming, shampooing, wet vacuuming for stain removal.",
       service: "Mattress Cleaning Service",
     },
     {
       imagePath: "/assets/curtain_cleaning.png",
-      text: "",
+      text: "Dry vacuuming to remove crumbs and dirt particles. -Wet shampooing and vacuuming to remove tough stains and spillages.",
       service: "Curtain Cleaning Service",
-    },
-    {
-      imagePath: "/assets/sanitization.png",
-      text: "",
-      service: "Sanitization Service",
     },
   ];
   return (
     <>
-      <div className="flex flex-col justify-center py-6 mt-16">
-        <div className="flex flex-row items-start justify-between mx-auto  md:px-24">
+      <div className="flex flex-col justify-center py-6 ">
+        <div className="flex flex-row items-start justify-center mx-auto fixed top-5 z-50 backdrop-blur-lg bg-slate-400 bg-opacity-40 w-full md:px-24">
           <button
-            className="lg:text-6xl text-5xl hover:text-red-600 lg:px-8 pl-4 lg:visible"
+            className="lg:text-6xl text-5xl hover:text-red-600 lg:px-8 pl-4 lg:visible text-white"
             onClick={() => navigate("/")}
           >
             &larr;

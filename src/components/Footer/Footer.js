@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import logo from "../css_assets/solo_facilities.png";
 import { GoLocation } from "react-icons/go";
@@ -7,6 +7,7 @@ import { FaGithub } from "react-icons/fa";
 // import ItemsContainer from "./ItemsContainer";
 
 const Footer = () => {
+  let [consumerno, setConsumerno] = useState("");
   return (
     <footer className="bg-black text-white">
       <div className="md:flex md:justify-between items-center md:items-center sm:px-4 bg-[#ffffff19] px-3 py-4">
@@ -15,13 +16,22 @@ const Footer = () => {
         </h1>
         <div>
           <input
-            type="Text"
+            type="number"
             placeholder="Enter your mobile no."
             className="text-gray-800 sm:w-72 w-full sm:mr-5 mr-2 lg:mb-0 mb-4 py-2.5 rounded-md px-2 focus-outline-none"
+            onChange={(e) => {
+              setConsumerno(e.target.value);
+            }}
+            onWheel={(e) => e.target.blur()}
           />
-          <button className="bg-[#ec2F4B] capitalize hover:bg-emerald-50 hover:text-slate-900 duration-300 px-5 py-2.5 font-[Poppins] rounded-md text-white md:w-auto w-full">
+          <a
+            className="bg-[#ec2F4B] capitalize hover:bg-emerald-50 hover:text-slate-900 duration-300 px-5 py-3.5 font-[Poppins] rounded-md text-white md:w-auto w-full"
+            target={"_blank"}
+            rel="noopener noreferrer"
+            href={`mailto:info@solofacilities.com?subject=Enquiry From Website&body=Hi, please Call me on ${consumerno}`}
+          >
             contact me
-          </button>
+          </a>
         </div>
       </div>
       <div className="flex flex-col space-y-3 items-center justify-between md:px-10 px-5 md:mx-32">
@@ -84,7 +94,9 @@ const Footer = () => {
             className="flex flex-row items-center justify-center text-center"
             href="tel:+919082296202"
           >
-            <span className="text-gray-600">&#128222; :</span>
+            <span className="text-gray-600 hover:text-amber-400">
+              &#128222; :
+            </span>
             +91-9082296202/+91-9892447318
           </a>
         </div>

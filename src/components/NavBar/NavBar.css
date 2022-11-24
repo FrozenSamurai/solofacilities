@@ -4,6 +4,9 @@
   border-top: #ff9def solid 2px;
   border-bottom: #ff9def solid 2px;
 }
+* {
+  font-family: "Sora", sans-serif;
+}
 
 .nav-item {
   margin: 2px 0;

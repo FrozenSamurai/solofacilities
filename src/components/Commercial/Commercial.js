@@ -9,57 +9,67 @@ const Commercial = () => {
   let navigate = useNavigate();
   const residentService = [
     {
-      imagePath: "/assets/deep_cleaning.png",
+      imagePath: "/assets/office_deep_cleaning.jpeg",
       text: "",
-      service: "Home Deep Cleaning Service",
+      service: "Office Deep Cleaning Service",
     },
     {
-      imagePath: "/assets/kitchen_cleaning.png",
+      imagePath: "/assets/Shopping_Mall_Cleaning.png",
       text: "",
-      service: "Kitchen Cleaning Service",
+      service: "Shopping Mall Cleaning Service",
     },
     {
-      imagePath: "/assets/bathroom_cleaning.png",
+      imagePath: "/assets/facility_management_service.jpg",
       text: "",
-      service: "Bathroom Cleaning Service",
+      service: "Facility Management",
     },
     {
-      imagePath: "/assets/sofa_cleaning.png",
+      imagePath: "/assets/housekeeping_service.jpeg",
       text: "",
-      service: "Sofa Cleaning Service",
+      service: "Housekeeping Service",
     },
     {
-      imagePath: "/assets/chair_cleaning.png",
+      imagePath: "/assets/jet_pressure.jpg",
       text: "",
-      service: "Chair Cleaning Service",
+      service: "Jet Pressure Cleaning Service",
     },
     {
-      imagePath: "/assets/carpet_cleaning.png",
+      imagePath: "/assets/glass_cleaning.jpg",
       text: "",
-      service: "Carpet Cleaning Service",
+      service: "Facade Glass Cleaning Service",
     },
     {
-      imagePath: "/assets/matress_cleaning.png",
+      imagePath: "/assets/Hospital.png",
       text: "",
-      service: "Mattress Cleaning Service",
+      service: "Hospital Cleaning Service",
     },
     {
-      imagePath: "/assets/curtain_cleaning.png",
+      imagePath: "/assets/appartment.png",
       text: "",
-      service: "Curtain Cleaning Service",
+      service: "Apartments Cleaning Service",
     },
     {
-      imagePath: "/assets/sanitization.png",
+      imagePath: "/assets/school.png",
       text: "",
-      service: "Sanitization Service",
+      service: "School Cleaning Service",
+    },
+    {
+      imagePath: "/assets/hotel.png",
+      text: "",
+      service: "Hotel Cleaning Service",
+    },
+    {
+      imagePath: "/assets/vaccation.png",
+      text: "",
+      service: "Vaccation Home Cleaning Service",
     },
   ];
   return (
     <>
-      <div className="flex flex-col justify-center py-6 mt-16">
-        <div className="flex flex-row items-start justify-between mx-auto  md:px-24">
+      <div className="flex flex-col justify-center py-6 relative">
+        <div className="flex flex-row items-start justify-center mx-auto  md:px-24 fixed top-5 z-50 backdrop-blur-lg bg-slate-400 bg-opacity-40 w-full">
           <button
-            className="lg:text-6xl text-5xl hover:text-red-600 lg:px-8 pl-4 lg:visible"
+            className="lg:text-6xl text-5xl hover:text-red-600 lg:px-8 pl-4 lg:visible text-white"
             onClick={() => navigate("/")}
           >
             &larr;

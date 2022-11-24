@@ -86,8 +86,8 @@ const Mascot = ({ location }) => {
           style={{ width: canvasRef.current?.clientWidth || 300 }}
         >
           <span
-            className={`rounded-lg p-2 z-50 backdrop-filter backdrop-blur-xl ${
-              text.startsWith("Hello") ? "text-black" : "text-red-600"
+            className={`rounded-lg p-2 z-50 backdrop-filter backdrop-blur-xl font-bold ${
+              text.startsWith("Hello") ? "text-black" : "text-red-800"
             }`}
           >
             {text}

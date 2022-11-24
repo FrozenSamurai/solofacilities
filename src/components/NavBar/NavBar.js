@@ -64,7 +64,7 @@ function NavBar({ inView }) {
               }
             >
               <Link
-                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:opacity-75 "
+                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def] "
                 to="overview-container"
                 smooth={true}
                 duration={700}
@@ -82,7 +82,7 @@ function NavBar({ inView }) {
               }
             >
               <Link
-                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:opacity-75"
+                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def]"
                 to="services-container"
                 smooth={true}
                 duration={700}
@@ -99,7 +99,7 @@ function NavBar({ inView }) {
               }
             >
               <Link
-                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:opacity-75"
+                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def]"
                 to="clients-container"
                 smooth={true}
                 duration={700}
@@ -116,7 +116,7 @@ function NavBar({ inView }) {
               }
             >
               <Link
-                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:opacity-75"
+                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def]"
                 to="team-container"
                 smooth={true}
                 duration={700}
@@ -133,7 +133,7 @@ function NavBar({ inView }) {
               }
             >
               <Link
-                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:opacity-75"
+                className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def]"
                 to="contact-container"
                 smooth={true}
                 duration={700}

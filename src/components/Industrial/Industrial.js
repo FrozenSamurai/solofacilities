@@ -9,57 +9,92 @@ const Industrial = () => {
   let navigate = useNavigate();
   const residentService = [
     {
-      imagePath: "/assets/deep_cleaning.png",
+      imagePath: "/assets/airport.png",
       text: "",
-      service: "Home Deep Cleaning Service",
+      service: "Aerospace Industry",
     },
     {
-      imagePath: "/assets/kitchen_cleaning.png",
+      imagePath: "/assets/transport.png",
       text: "",
-      service: "Kitchen Cleaning Service",
+      service: "Transport Industry",
     },
     {
-      imagePath: "/assets/bathroom_cleaning.png",
+      imagePath: "/assets/computer.png",
       text: "",
-      service: "Bathroom Cleaning Service",
+      service: "Computer Industry",
     },
     {
-      imagePath: "/assets/sofa_cleaning.png",
+      imagePath: "/assets/telecom.png",
       text: "",
-      service: "Sofa Cleaning Service",
+      service: "Telecommunication Industry",
     },
     {
-      imagePath: "/assets/chair_cleaning.png",
+      imagePath: "/assets/agriculture.png",
       text: "",
-      service: "Chair Cleaning Service",
+      service: "Agriculture Industry",
     },
     {
-      imagePath: "/assets/carpet_cleaning.png",
+      imagePath: "/assets/appartment.png",
       text: "",
-      service: "Carpet Cleaning Service",
+      service: "Construction Industry",
     },
     {
-      imagePath: "/assets/matress_cleaning.png",
+      imagePath: "/assets/school.png",
       text: "",
-      service: "Mattress Cleaning Service",
+      service: "Education Industry",
     },
     {
-      imagePath: "/assets/curtain_cleaning.png",
+      imagePath: "/assets/hospital.png",
       text: "",
-      service: "Curtain Cleaning Service",
+      service: "Pharmaceutical Industry",
     },
     {
-      imagePath: "/assets/sanitization.png",
+      imagePath: "/assets/food.png",
       text: "",
-      service: "Sanitization Service",
+      service: "Food Industry",
+    },
+    {
+      imagePath: "/assets/entertain.png",
+      text: "",
+      service: "Entertainment Industry",
+    },
+    {
+      imagePath: "/assets/energy.png",
+      text: "",
+      service: "Energy Industry",
+    },
+    {
+      imagePath: "/assets/manufature.png",
+      text: "",
+      service: "Manufacturing Industry",
+    },
+    {
+      imagePath: "/assets/music.png",
+      text: "",
+      service: "Music Industry",
+    },
+    {
+      imagePath: "/assets/mining.jpg",
+      text: "",
+      service: "Mining Industry",
+    },
+    {
+      imagePath: "/assets/chemical.png",
+      text: "",
+      service: "Chemical Industry",
+    },
+    {
+      imagePath: "/assets/electronics.png",
+      text: "",
+      service: "Electronics Industry",
     },
   ];
   return (
     <>
-      <div className="flex flex-col justify-center py-6 mt-16">
-        <div className="flex flex-row items-start justify-between mx-auto  md:px-24">
+      <div className="flex flex-col justify-center py-6 ">
+        <div className="flex flex-row items-start justify-center fixed top-5 z-50 mx-auto backdrop-blur-lg bg-slate-400 bg-opacity-40 w-full md:px-24">
           <button
-            className="lg:text-6xl text-5xl hover:text-red-600 lg:px-8 pl-4 lg:visible"
+            className="lg:text-6xl text-5xl hover:text-red-600 lg:px-8 pl-4 lg:visible text-white"
             onClick={() => navigate("/")}
           >
             &larr;

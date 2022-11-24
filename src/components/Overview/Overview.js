@@ -9,13 +9,13 @@ const Overview = forwardRef(({ location }, ref) => {
     <section
       ref={ref}
       id="overview-container"
-      className="flex mt-16  items-start"
+      className="flex mt-16  items-start font-bold"
     >
       <div className="px-4 pt-0 w-full sm:px-6 md:px-12 lg:pt-0">
         <div className="flex lg:justify-center flex-col lg:flex-row items-center w-full ">
           <h1
             className={`glow block lg:hidden text-white underline mx-auto
-                lg:mx-0 text-4xl lg:text-5xl pt-10 
+                lg:mx-0 text-5xl lg:text-5xl pt-10 font-bold
               `}
             style={{
               textShadow:
@@ -48,7 +48,7 @@ const Overview = forwardRef(({ location }, ref) => {
             >
               <h1
                 className={` hidden lg:block text-white underline mx-auto text-center lg:text-center
-                lg:mx-0 text-4xl lg:text-5xl 
+                lg:mx-0 text-5xl lg:text-5xl font-Bold
               `}
                 style={{
                   textShadow:
@@ -58,8 +58,8 @@ const Overview = forwardRef(({ location }, ref) => {
               >
                 OVERVIEW
               </h1>
-              <div className="w-fit h-fit  backdrop-sepia backdrop-blur-3xl p-2 ">
-                <p className="mb-3 font-sora lg:mt-0 text-sm md:text-xl leading-relaxed text-left text-slate-800 ">
+              <div className="w-fit h-fit backdrop-blur-3xl p-4 ">
+                <p className="mb-3  lg:mt-0 text-sm md:text-xl leading-relaxed text-left font-bold ">
                   Our business of providing cleaning services to all sectors. We
                   work on formal agreements and contracts with the companies and
                   residential administration. We also provide our services to

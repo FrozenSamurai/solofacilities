@@ -34,10 +34,10 @@ const Welcome = forwardRef((_, ref) => {
                   id="logoImage"
                   className=" "
                 />
-                <h1 className="text-center text-black text-4xl font-sora font-semibold z-10">
+                <h1 className="text-center text-black text-4xl font-semibold z-10">
                   Welcome to Solo Facilities
                 </h1>
-                <p className="text-center text-black text-xl font-sora font-semibold z-10">
+                <p className="text-center text-black text-xl font-semibold z-10">
                   We are a small, family owned business that specializes in
                   providing the best cleaning services in the area.
                 </p>
