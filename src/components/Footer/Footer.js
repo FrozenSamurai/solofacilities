@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import logo from "../css_assets/solo_facilities.png";
 import { GoLocation } from "react-icons/go";
-import { FaGithub } from "react-icons/fa";
+import { FaMailBulk } from "react-icons/fa";
 
 // import ItemsContainer from "./ItemsContainer";
 
@@ -91,24 +91,22 @@ const Footer = () => {
           </a>
           <hr class="border-gray-100 md:my-2 md:px-32 px-16"></hr>
           <a
-            className="flex flex-row items-center justify-center text-center"
+            className="flex flex-row items-center justify-center text-center hover:text-amber-400"
             href="tel:+919082296202"
           >
-            <span className="text-gray-600 hover:text-amber-400">
-              &#128222; :
-            </span>
+            <span className="text-gray-600 ">&#128222; :</span>
             +91-9082296202/+91-9892447318
           </a>
         </div>
         <div className="p-3 w-full">
           <a
-            className="flex flex-row items-center justify-center text-center text-xs animate-pulse"
-            href="https://github.com/FrozenSamurai"
+            className="flex flex-row items-center justify-center text-center text-xs animate-pulse hover:text-red-500"
+            href="mailto:rajjdhv2001@gmail.com"
             target={"_blank"}
             rel="noopener noreferrer"
-            title="Website Developer info"
+            title="Website Developer Email"
           >
-            <FaGithub /> Developer: Raj Vijay Jadhav
+            <FaMailBulk /> Contact the Developer
           </a>
         </div>
       </div>

@@ -4,22 +4,28 @@ import TeamMembers from "./TeamMembers";
 const Team = forwardRef((_, ref) => {
   let team_members = [
     {
-      name: "Raj Jadhav",
-      role: "Engnieer",
-      imagePath: "/assets/team/raj.jpg",
-      description: "engineer engineer engineer",
+      name: "Mandar Patil",
+      role: "Founder & CEO",
+      imagePath: "/assets/team/mandar.png",
+      description: "Mumbai Division Head",
+    },
+    {
+      name: "Santosh Mane",
+      role: "Co-Founder & CHRO",
+      imagePath: "/assets/team/Santosh Cfo.png",
+      description: "Pune Division Head",
+    },
+    {
+      name: "Santosh Gurav",
+      role: "Business Analyst & Guide",
+      imagePath: "/assets/team/Santosh.png",
+      description: "",
     },
     {
       name: "Raj Jadhav",
-      role: "Engnieer",
-      imagePath: "/assets/team/raj.jpg",
-      description: "engineer engineer engineer",
-    },
-    {
-      name: "Raj Jadhav",
-      role: "Engnieer",
-      imagePath: "/assets/team/raj.jpg",
-      description: "engineer engineer engineer",
+      role: "Technical Support",
+      imagePath: "/assets/team/raj1.png",
+      description: "",
     },
   ];
 

@@ -39,7 +39,7 @@ const Commercial = () => {
       service: "Facade Glass Cleaning Service",
     },
     {
-      imagePath: "/assets/Hospital.png",
+      imagePath: "/assets/hospital.png",
       text: "",
       service: "Hospital Cleaning Service",
     },

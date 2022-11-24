@@ -43,6 +43,7 @@ const ServiceCard = ({ imagePath, text, service }) => {
             </>
           ) : (
             <div className="h-full w-full flex justify-center items-center flex-col space-y-2">
+              <h1 className="font-bold ">Contact Us For Quotation</h1>
               <a
                 className="w-2/3 bg-blue-500 rounded-sm p-2"
                 href="tel:+91-9082296202"

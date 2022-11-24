@@ -31,7 +31,7 @@ const Overview = forwardRef(({ location }, ref) => {
             style={{
               // height: window.innerWidth < 480 ? 320 : 100,
               width: 600,
-              height: 600,
+              height: window.innerWidth < 480 ? 350 : 600,
             }}
           >
             <Mascot location={location} />
@@ -59,7 +59,7 @@ const Overview = forwardRef(({ location }, ref) => {
                 OVERVIEW
               </h1>
               <div className="w-fit h-fit backdrop-blur-3xl p-4 ">
-                <p className="mb-3  lg:mt-0 text-sm md:text-xl leading-relaxed text-left font-bold ">
+                <p className="mb-3  lg:mt-0 text-lg md:text-xl leading-relaxed text-left font-bold ">
                   Our business of providing cleaning services to all sectors. We
                   work on formal agreements and contracts with the companies and
                   residential administration. We also provide our services to
@@ -83,13 +83,13 @@ const Overview = forwardRef(({ location }, ref) => {
             </p> */}
             </div>
             <a
-              href="https://www.irjet.net/archives/V9/i5/IRJET-V9I501.pdf"
+              href="https://drive.google.com/file/d/1MDaRpcyyzDV14Mi0q1anCf0nNlnCCaHK/view?usp=sharing"
               target={"_blank"}
               rel="noopener noreferrer"
               data-aos="zoom-in"
               className="text-blue-500 hover:text-blue-800 border-4 rounded-md py-2 px-4 border-blue-500 hover:border-blue-700 hover:bg-gray-100 bg-opacity-70 mt-4 md:mt-0 bg-white"
             >
-              View/Download Company Profile here
+              View/Download Company Catlog here
             </a>
           </div>
         </div>
