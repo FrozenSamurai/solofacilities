@@ -1,9 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./FeaturesItem.css";
 
-function FeaturesItem({ imagePath, text, navigator }) {
+function FeaturesItem({ imagePath, text, navigator, prevRoute, setPrevRoute }) {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   return (
     <div
       data-aos="flip-left"
@@ -14,6 +15,8 @@ function FeaturesItem({ imagePath, text, navigator }) {
         boxShadow: "0px 10px 15px 0px rgb(0 0 0 / 40%)",
       }}
       onClick={() => {
+        setPrevRoute(pathname);
+        console.log(pathname);
         navigate(navigator);
         window.scrollTo(0, 0);
       }}

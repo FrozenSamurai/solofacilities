@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import AnimatedNumbers from "react-animated-numbers";
 
 const OurNumbers = () => {
-  const [num, setNum] = useState(210);
-  const [num2, setNum2] = useState(1050);
+  const [num, setNum] = useState(310);
+  const [num2, setNum2] = useState(2050);
   const [num3, setNum3] = useState(5);
   const [num4, setNum4] = useState(2);
   return (

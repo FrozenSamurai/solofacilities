@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-scroll";
+import { div } from "react-scroll";
 
 import "./NavBar.css";
 import { useNavigate } from "react-router-dom";
@@ -63,14 +63,14 @@ function NavBar({ inView }) {
                 (inView === "overview" ? " navbar-item-in-view" : "")
               }
             >
-              <Link
+              <div
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def] "
-                to="overview-container"
-                smooth={true}
-                duration={700}
+                onClick={() => {
+                  navigate("/about");
+                }}
               >
                 <span className="mx-2  text-lg ">about</span>
-              </Link>
+              </div>
             </li>
             <li
               style={{
@@ -81,14 +81,14 @@ function NavBar({ inView }) {
                 (inView === "certificate" ? " navbar-item-in-view" : "")
               }
             >
-              <Link
+              <div
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def]"
-                to="services-container"
-                smooth={true}
-                duration={700}
+                onClick={() => {
+                  navigate("/services");
+                }}
               >
                 <span className="mx-2 text-lg">Services</span>
-              </Link>
+              </div>
             </li>
             <li
               style={{
@@ -98,16 +98,16 @@ function NavBar({ inView }) {
                 "nav-item" + (inView === "team" ? " navbar-item-in-view" : "")
               }
             >
-              <Link
+              <div
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def]"
-                to="clients-container"
-                smooth={true}
-                duration={700}
+                onClick={() => {
+                  navigate("/clients");
+                }}
               >
                 <span className="mx-2 text-lg">Clients</span>
-              </Link>
+              </div>
             </li>
-            <li
+            {/* <li
               style={{
                 animationDelay: window.innerWidth < 1024 ? "500ms" : "2.4s",
               }}
@@ -115,15 +115,15 @@ function NavBar({ inView }) {
                 "nav-item" + (inView === "team" ? " navbar-item-in-view" : "")
               }
             >
-              <Link
+              <div
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def]"
-                to="team-container"
-                smooth={true}
-                duration={700}
+                onClick={() => {
+                  navigate("/team");
+                }}
               >
                 <span className="mx-2 text-lg">Team</span>
-              </Link>
-            </li>
+              </div>
+            </li> */}
             <li
               style={{
                 animationDelay: window.innerWidth < 1024 ? "600ms" : "2.5s",
@@ -132,14 +132,14 @@ function NavBar({ inView }) {
                 "nav-item" + (inView === "faq" ? " navbar-item-in-view" : "")
               }
             >
-              <Link
+              <div
                 className="px-3 py-2 flex items-center text-xs uppercase  leading-snug text-gray-800 hover:text-[#ff9def]"
-                to="contact-container"
-                smooth={true}
-                duration={700}
+                onClick={() => {
+                  navigate("/contact");
+                }}
               >
                 <span className="mx-2 text-lg">Contact</span>
-              </Link>
+              </div>
             </li>
           </ul>
         </div>

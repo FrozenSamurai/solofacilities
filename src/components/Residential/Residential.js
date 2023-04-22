@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 // import deep_cleaning from "../css_assets/deep_cleaning.png";
 
-const Residential = () => {
+const Residential = ({ prevRoute }) => {
   let navigate = useNavigate();
   const residentService = [
     {
@@ -65,7 +65,15 @@ Available in Two Packages
         <div className="flex flex-row items-start justify-center mx-auto fixed top-5 z-50 backdrop-blur-lg bg-slate-400 bg-opacity-40 w-full md:px-24">
           <button
             className="lg:text-6xl text-5xl hover:text-red-600 lg:px-8 pl-4 lg:visible text-white"
-            onClick={() => navigate("/")}
+            onClick={() => {
+              if (prevRoute === "/") {
+                navigate("/");
+
+                window.scrollTo(0, 0);
+              } else {
+                navigate(-1);
+              }
+            }}
           >
             &larr;
           </button>

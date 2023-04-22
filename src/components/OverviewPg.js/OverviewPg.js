@@ -1,20 +1,20 @@
 import React, { forwardRef } from "react";
 import Mascot from "../Mascot/Mascot";
-import "./Overview.css";
+import "./Overviewpg.css";
 // import Slideshow from "../Slideshow/Slideshow";
 // import Mascot from "../Mascot/Mascot";
 
-const Overview = forwardRef(({ location }, ref) => {
+const OverviewPg = forwardRef(({ location }, ref) => {
   return (
     <section
       ref={ref}
       id="overview-container"
-      className="flex mt-16  items-start font-bold"
+      className="flex items-start font-bold"
     >
       <div className="px-4 pt-0 w-full sm:px-6 md:px-12 lg:pt-0">
         <div className="flex lg:justify-center flex-col lg:flex-row items-center w-full ">
           <h1
-            className={`glow block lg:hidden text-white underline mx-auto
+            className={`glow block lg:hidden text-black underline mx-auto
                 lg:mx-0 text-5xl lg:text-5xl pt-10 font-bold
               `}
             style={{
@@ -47,7 +47,7 @@ const Overview = forwardRef(({ location }, ref) => {
             lg:mb-16 ml-0 lg:ml-4"
             >
               <h1
-                className={` hidden lg:block text-white underline mx-auto text-center lg:text-center
+                className={` hidden lg:block text-black underline mx-auto text-center lg:text-center
                 lg:mx-0 text-5xl lg:text-5xl font-Bold
               `}
                 style={{
@@ -58,7 +58,7 @@ const Overview = forwardRef(({ location }, ref) => {
               >
                 OVERVIEW
               </h1>
-              <div className="w-fit h-fit backdrop-blur-3xl text-gray-200 p-4 ">
+              <div className="w-fit h-fit backdrop-blur-3xl p-4 ">
                 <p className="mb-3  lg:mt-0 text-lg md:text-xl leading-relaxed text-left font-bold ">
                   Our business of providing cleaning services to all sectors. We
                   work on formal agreements and contracts with the companies and
@@ -102,4 +102,4 @@ const Overview = forwardRef(({ location }, ref) => {
 //   <span className={`text-highlight ${b && "font-bold"}`}>{children}</span>
 // );
 
-export default Overview;
+export default OverviewPg;

@@ -90,12 +90,13 @@ const Footer = () => {
             Dombivli East, Maharashtra 421201
           </a>
           <hr class="border-gray-100 md:my-2 md:px-32 px-16"></hr>
+          <h1 className="text-sm">Customer Care 24x7 Helpline</h1>
           <a
             className="flex flex-row items-center justify-center text-center hover:text-amber-400"
             href="tel:+919082296202"
           >
             <span className="text-gray-600 ">&#128222; :</span>
-            +91-9082296202/+91-9892447318
+            +91-7777 050 819
           </a>
         </div>
         <div className="p-3 w-full">

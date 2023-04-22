@@ -29,9 +29,9 @@ const ServiceCard = ({ imagePath, text, service }) => {
         >
           {text !== "" ? (
             <>
-              <div>
+              <div className="min-h-[80%] space-y-1">
                 {text.split("-").map((txt) => (
-                  <p className="text-left pb-2 w-full">{"-" + txt}</p>
+                  <p className="  text-left w-full">{"-" + txt}</p>
                 ))}
               </div>
               <a

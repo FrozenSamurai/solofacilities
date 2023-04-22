@@ -1,0 +1,9 @@
+#services-container {
+  background-color: rgba(148, 90, 237, 0);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+
+  /* background by SVGBackgrounds.com */
+}

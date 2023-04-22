@@ -39,7 +39,7 @@ const Welcome = forwardRef((_, ref) => {
                 </h1>
                 <p className="text-center text-black text-xl font-semibold z-10">
                   We are a small, family owned business that specializes in
-                  providing the best cleaning services in the area.
+                  providing the best cleaning services in our area.
                 </p>
               </div>
             </div>

@@ -7,7 +7,7 @@ import { BsFacebook } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-const Contact = forwardRef((_, ref) => {
+const ContactPg = forwardRef((_, ref) => {
   let iconStyles = { color: "white", fontSize: "1.5em" };
   return (
     <section ref={ref} id="contact-container" className="pt-28 lg:pb-10">
@@ -16,7 +16,7 @@ const Contact = forwardRef((_, ref) => {
           <h1
             data-aos="fade-down"
             className="
-        text-white text-5xl text-center
+        text-black text-5xl text-center
         lg:text-5xl capitalize glow font-semibold
         "
           >
@@ -31,12 +31,12 @@ const Contact = forwardRef((_, ref) => {
                 : "grid grid-cols-2 divide-x-4"
             }
           >
-            <div className=" text-center text-3xl px-4 mt-4">
-              <div className=" w-full border-2 rounded-md bg-opacity-70 bg-white">
+            <div className=" text-center text-3xl px-4 mt-4 ">
+              <div className=" w-full border-2 rounded-md bg-opacity-70 bg-slate-200">
                 Mumbai
                 <h1 className="text-sm">Mumbai, Thane, Navi-mumbai</h1>
               </div>
-              <div className="w-auto shadow-2xl border-4 bg-opacity-70 bg-white flex-col p-4 my-4 rounded-lg">
+              <div className="w-auto shadow-2xl border-4 bg-opacity-70 bg-slate-200 flex-col p-4 my-4 rounded-lg">
                 <div
                   data-aos="fade-right"
                   className="w-full shadow-xl flex-col p-4 my-4  rounded-lg bg-white"
@@ -77,18 +77,18 @@ const Contact = forwardRef((_, ref) => {
               </div>
             </div>
             <div className=" text-3xl text-center mt-4 pt-8 md:pt-0">
-              <div className=" mx-4 border-2 rounded-md bg-opacity-70 bg-white">
+              <div className=" mx-4 border-2 rounded-md bg-opacity-70 bg-slate-200">
                 Pune
                 <h1 className="text-sm">Ghatmatha, Maval, Desh</h1>
               </div>
-              <div className="bg-opacity-70 bg-white w-auto shadow-xl flex-col p-4 my-4 mx-4 rounded-lg">
+              <div className="bg-opacity-70 bg-slate-200 w-auto shadow-xl flex-col p-4 my-4 mx-4 rounded-lg">
                 <div
                   data-aos="fade-left"
                   className="w-full shadow-xl flex-col p-4 my-4 rounded-lg bg-white"
                 >
                   <a
                     className="text-black text-center text-xl "
-                    href="tel:+917777050718"
+                    href="tel:+917777050817"
                   >
                     <span>&#128222; : </span>+91-7777 050 817
                   </a>
@@ -171,4 +171,4 @@ const Contact = forwardRef((_, ref) => {
   );
 });
 
-export default Contact;
+export default ContactPg;

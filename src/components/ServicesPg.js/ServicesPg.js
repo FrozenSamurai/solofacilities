@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import FeaturesItem from "../FeaturesItem/FeaturesItem";
-import "./Services.css";
+import "./ServicesPg.css";
 import residential from "../css_assets/residential.png";
 import commercial from "../css_assets/commercial.png";
 import industrial from "../css_assets/industrial.png";
@@ -53,13 +53,13 @@ const services = [
   // },
 ];
 
-const Services = ({ prevRoute, setPrevRoute }) => {
+const ServicesPg = ({ prevRoute, setPrevRoute }) => {
   return (
     <section id="services-container" className="pb-10 pt-32">
       <h1
         data-aos="fade-down"
         className="
-        text-white underline text-center text-5xl
+        text-black underline text-center text-5xl
         lg:text-6xl uppercase glow font-semibold
         "
       >
@@ -82,4 +82,4 @@ const Services = ({ prevRoute, setPrevRoute }) => {
   );
 };
 
-export default Services;
+export default ServicesPg;

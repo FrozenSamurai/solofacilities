@@ -2,7 +2,14 @@ import React, { useRef, useState, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useAnimations, useGLTF } from "@react-three/drei";
 
-function Scene({ canvasRef, setText, setCanvasHovered, location, ...props }) {
+function Scene({
+  canvasRef,
+  setText,
+  setCanvasHovered,
+  location,
+
+  ...props
+}) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [canvasCenter, setCanvasCenter] = useState({ x: 0, y: 0 });
   const group = useRef();
@@ -73,7 +80,7 @@ function Scene({ canvasRef, setText, setCanvasHovered, location, ...props }) {
   );
 }
 
-const Mascot = ({ location }) => {
+const Mascot = ({ location, textpos, hidden = false }) => {
   const canvasRef = useRef();
   const [canvasHovered, setCanvasHovered] = useState(false);
   const [text, setText] = useState("Hello! I am Mr. Vacuum!");
@@ -82,13 +89,15 @@ const Mascot = ({ location }) => {
     <>
       {canvasHovered && (
         <div
-          className="absolute animate-fadeUp text-xl text-black text-center top-10 flex justify-center"
+          className={`absolute animate-fadeUp text-xl text-black text-center top-${
+            textpos ?? 0
+          } flex justify-center`}
           style={{ width: canvasRef.current?.clientWidth || 300 }}
         >
           <span
             className={`rounded-lg p-2 z-50 backdrop-filter backdrop-blur-xl font-bold ${
-              text.startsWith("Hello") ? "text-black" : "text-red-800"
-            }`}
+              hidden ? "hidden" : "block"
+            } ${text.startsWith("Hello") ? "text-black" : "text-red-800"}`}
           >
             {text}
           </span>
