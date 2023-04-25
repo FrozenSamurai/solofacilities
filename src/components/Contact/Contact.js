@@ -88,7 +88,7 @@ const Contact = forwardRef((_, ref) => {
                 >
                   <a
                     className="text-black text-center text-xl "
-                    href="tel:+917777050718"
+                    href="tel:+917777050817"
                   >
                     <span>&#128222; : </span>+91-7777 050 817
                   </a>

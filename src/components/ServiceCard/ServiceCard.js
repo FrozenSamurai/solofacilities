@@ -36,7 +36,7 @@ const ServiceCard = ({ imagePath, text, service }) => {
               </div>
               <a
                 className="w-fit h-10 bg-green-500 rounded-sm p-2"
-                href="tel:+91-9082296202"
+                href="tel:+91-7777050818"
               >
                 Call Us
               </a>
@@ -46,7 +46,7 @@ const ServiceCard = ({ imagePath, text, service }) => {
               <h1 className="font-bold ">Contact Us For Quotation</h1>
               <a
                 className="w-2/3 bg-blue-500 rounded-sm p-2"
-                href="tel:+91-9082296202"
+                href="tel:+91-7777050818"
                 target={"_blank"}
                 rel="noopener noreferrer"
                 title="Call"

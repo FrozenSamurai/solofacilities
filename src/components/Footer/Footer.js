@@ -93,7 +93,7 @@ const Footer = () => {
           <h1 className="text-sm">Customer Care 24x7 Helpline</h1>
           <a
             className="flex flex-row items-center justify-center text-center hover:text-amber-400"
-            href="tel:+919082296202"
+            href="tel:+91-7777050819"
           >
             <span className="text-gray-600 ">&#128222; :</span>
             +91-7777 050 819
